@@ -1,0 +1,35 @@
+REM Arthur: Hacker-service
+REM Description: A helpful script to download and install the latest java (JDK) on
+REM a system. And BTW I think its plug and play ready.
+REM Save this (https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe) 
+REM into a path then execute it and press enter abunch of times. 
+DELAY 1000
+GUI r
+DELAY 1500
+STRING powershell -c "(New-Object Net.WebClient).DownloadFile('https://download.oracle.com/java/20/latest/jdk-20_windows-x64_bin.exe', 'C:\Users\Public\JavaJDKInstall.exe'); Start-Process -FilePath 'C:\Users\Public\JavaJDKInstall.exe'"
+DELAY 500
+ENTER
+REM Waiting for download
+WAIT_FOR_BUTTON_PRESS
+DELAY 1000
+REM Doing UAC
+LEFT
+DELAY 500
+ENTER
+DELAY 5000
+REM Java Wizard is open
+ENTER
+DELAY 2500
+ENTER
+WAIT_FOR_BUTTON_PRESS
+DELAY 500
+ENTER
+DELAY 500
+GUI r
+DELAY 1500
+STRING powershell -c del C:\Users\Public\JavaJDKInstall.exe
+DELAY 500
+ENTER
+
+
+

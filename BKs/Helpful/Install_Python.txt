@@ -1,0 +1,23 @@
+REM Arthur: Hacker-service
+REM Description: A helpful script to download and install the latest version 
+REM off python on the system. And BTW I think its plug and play ready.
+REM Save this (https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe) 
+REM into a path then execute it and press enter abunch of times. 
+DELAY 1000
+GUI r
+DELAY 1500
+STRING powershell -c "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe', 'C:\Users\Public\PythonInstall.exe'); Start-Process -FilePath 'C:\Users\Public\PythonInstall.exe'"
+DELAY 500
+ENTER
+REM Waiting for download
+DELAY 7500
+REM Python Wizard is open
+SPACE
+WAIT_FOR_BUTTON_PRESS
+SPACE
+DELAY 500
+GUI r
+DELAY 1500
+STRING powershell -c del C:\Users\Public\PythonInstall.exe
+DELAY 500
+ENTER
