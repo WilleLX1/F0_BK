@@ -32,6 +32,11 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
 - [Install Java](BKs/Helpful/Install_Java.txt)
 - [Install Python](BKs/Helpful/Install_Python.txt)
 
+# Future Scripts:
+      1) Invert Mouse Clicks
+      2) Change Background
+      3) FUD Password Extraction (Browser and WiFi)
+      4) 
 
 # Warning:-
     Use this tool Only for Educational Purpose And I will Not be Responsible For ur cruel act.
