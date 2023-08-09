@@ -19,6 +19,10 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
 
 ### Extraction
 
+- [WD UAC](BKs/Exploit/WD_UAC.txt)
+
+### Extraction
+
 #### Post Extractions
 
 - [IP Extraction](BKs/Extraction/Post%20Extractions/IP.txt)
@@ -36,7 +40,6 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
       1) Invert Mouse Clicks
       2) Change Background
       3) FUD Password Extraction (Browser and WiFi)
-      4) UAC Bypass
 
 # Warning:-
     Use this tool Only for Educational Purpose And I will Not be Responsible For ur cruel act.
