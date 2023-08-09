@@ -5,7 +5,7 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
       All of the scripts in this repository NEEDS to be edited to function correctly.
 
 # Warning:
-      1. Don't Upload Any Payloads To VirusTotal.com Bcz These tools in scripts 
+     1. Don't Upload Any Payloads To VirusTotal.com Bcz These tools in scripts 
         will not work with Time.
      2. Virustotal Share Signatures With AV Comapnies.
      3. Again Don't be an Idiot!
