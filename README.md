@@ -1,5 +1,5 @@
 # F0_BK
-      Mostly Fully Undetectable Duckyscripts
+Welcome to my collection of mostly Fully Undetectable Duckyscripts! This repository contains various duckyscripts categorized for different purposes.
 
 # Note:
       All of the scripts in this repository NEEDS to be edited to function correctly.
@@ -9,10 +9,6 @@
         will not work with Time.
      2. Virustotal Share Signatures With AV Comapnies.
      3. Again Don't be an Idiot!
-
-# Script Repository
-
-Welcome to my collection of scripts! This repository contains various scripts categorized for different purposes.
 
 ## Categories
 
