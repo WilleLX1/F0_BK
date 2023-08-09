@@ -10,27 +10,27 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
      2. Virustotal Share Signatures With AV Comapnies.
      3. Again Don't be an Idiot!
 
-## Categories:
+# Categories:
 
 ### Backdoor
 
-- [NanoCore](Backdoor/NanoCore.txt)
-- [WinRAT](Backdoor/WinRAT.txt)
+- [NanoCore](BKs/Backdoor/Nanocore/BothDNS1234.txt)
+- [WinRAT](BKs/Backdoor/WinRAT/BothDNS1337.txt)
 
 ### Extraction
 
 #### Post Extractions
 
-- [IP Extraction](Extraction/Post%20Extractions/IP.txt)
+- [IP Extraction](BKs/Extraction/Post%20Extractions/IP.txt)
 
 #### Webhook Extractions
 
-- [IP Extraction](Extraction/Webhook%20Extractions/IP%20Extraction.txt)
+- [IP Extraction](BKs/Extraction/Webhook%20Extractions/IP%20Extraction.txt)
 
 ### Helpful
 
-- [Install Java](Helpful/Install%20Java.txt)
-- [Install Python](Helpful/Install%20Python.txt)
+- [Install Java](BKs/Helpful/Install%20Java.txt)
+- [Install Python](BKs/Helpful/Install%20Python.txt)
 
 
 # Warning:-
