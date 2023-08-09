@@ -17,9 +17,9 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
 - [NanoCore](BKs/Backdoor/Nanocore/BothDNS1234.txt)
 - [WinRAT](BKs/Backdoor/WinRAT/BothDNS1337.txt)
 
-### Extraction
+### Exploits
 
-- [WD UAC](BKs/Exploit/WD_UAC.txt)
+- [WD UAC](BKs/Exploits/WD_UAC.txt)
 
 ### Extraction
 
