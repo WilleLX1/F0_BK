@@ -10,7 +10,7 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
      2. Virustotal Share Signatures With AV Comapnies.
      3. Again Don't be an Idiot!
 
-# Categories:
+# Script Categories:
 
 ### Backdoor
 
