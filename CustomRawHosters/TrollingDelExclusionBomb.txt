@@ -1,0 +1,10 @@
+@echo off
+setlocal enabledelayedexpansion
+
+:: Get the list of current exclusion paths
+for /f "delims=" %%E in ('powershell.exe -c "Get-MpPreference | Select-Object -ExpandProperty ExclusionPath"') do (
+    set "exclusionPath=%%~E"
+    start /b powershell.exe -c "Remove-MpPreference -ExclusionPath '!exclusionPath!'"
+)
+
+goto :eof
