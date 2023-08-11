@@ -2,7 +2,7 @@
 Welcome to my collection of mostly Fully Undetectable Duckyscripts! This repository contains various duckyscripts categorized for different purposes.
 
 # Note:
-      All of the scripts in this repository NEEDS to be edited to function correctly.
+      Almost all of the scripts in this repository NEEDS to be edited to function correctly.
 
 # Warning:
      1. Don't Upload Any Payloads To VirusTotal.com Bcz These tools in scripts 
@@ -11,6 +11,11 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
      3. Again Don't be an Idiot!
 
 # Script Categories:
+
+### Anti-Virus
+
+- [Disable Windows Defender (Normal)](BKs/Anti-Virus/DisableWD(Normal).txt)
+- [Perma Disable Windows Defender (Exploit)](BKs/Anti-Virus/PermDisableWD(Exploit).txt)
 
 ### Backdoor
 
@@ -29,12 +34,22 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
 
 #### Webhook Extractions
 
+- [Browser Passwords](BKs/Extraction/Webhook%20Extractions/Browser%20Passwords.txt)
 - [IP Extraction](BKs/Extraction/Webhook%20Extractions/IP%20Extraction.txt)
 
 ### Helpful
 
 - [Install Java](BKs/Helpful/Install_Java.txt)
 - [Install Python](BKs/Helpful/Install_Python.txt)
+
+### Helpful
+
+#### Severe
+
+- [Windows Defender Exclusion Trolling](BKs/Trolling/Severe/WD_Exclusion.txt)
+  
+#### Minor
+
 
 # Future Scripts:
       1) Invert Mouse Clicks
