@@ -1,6 +1,6 @@
 REM Arthur: Hacker-service
-REM Description: Will try to create a new CMD window that is elevated.
-REM Bypasses only Windows Defender.
+REM Description: Will create abunch of execptions in AV (Annoying as fuck)
+REM Only works with Windows Defender.
 DELAY 500
 GUI R
 DELAY 1500
