@@ -42,7 +42,7 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
 - [Install Java](BKs/Helpful/Install_Java.txt)
 - [Install Python](BKs/Helpful/Install_Python.txt)
 
-### Helpful
+### Trolling
 
 #### Severe
 
