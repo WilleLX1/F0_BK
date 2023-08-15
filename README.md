@@ -55,6 +55,8 @@ Welcome to my collection of mostly Fully Undetectable Duckyscripts! This reposit
       1) Invert Mouse Clicks
       2) Change Background
       3) FUD Password Extraction (Browser and WiFi)
+      4) Drop FUD Reverse Shell
+      5) 
 
 # Warning:-
     Use this tool Only for Educational Purpose And I will Not be Responsible For ur cruel act.
